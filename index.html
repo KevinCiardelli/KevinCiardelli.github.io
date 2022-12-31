@@ -40,16 +40,13 @@
 										<p>Bachelors of Science Computer Science </p>
 									</div>
 									<div class="meta">
-										<p>Today's date is: <time id="current-date"></time></p>
+										<p><time id="current-date"></time></p>
 									  <script>
 									    // Get the current date
-									    var currentDate = new Date();
+											var current_date = date.getFullYear()+"-"+(date.getMonth()+1)+"-"+ date.getDate();
+											document.getElementById("p1").innerHTML = current_date;
 
-									    // Get the element with the ID "current-date"
-									    var dateElement = document.getElementById("current-date");
 
-									    // Set the text content of the element to the current date
-									    dateElement.textContent = currentDate;
 									  </script>
 									</div>
 								</header>
