@@ -43,10 +43,13 @@
 										<p><time id="current-date"></time></p>
 									  <script>
 									    // Get the current date
-											var current_date = date.getFullYear()+"-"+(date.getMonth()+1)+"-"+ date.getDate();
-											document.getElementById("p1").innerHTML = current_date;
+									    var currentDate = new Date();
 
+									    // Get the element with the ID "current-date"
+									    var dateElement = document.getElementById("current-date");
 
+									    // Set the text content of the element to the current date
+									    dateElement.textContent = currentDate;
 									  </script>
 									</div>
 								</header>
