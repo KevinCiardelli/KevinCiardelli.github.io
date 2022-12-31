@@ -40,7 +40,7 @@
 										<p>Bachelors of Science Computer Science </p>
 									</div>
 									<div class="meta">
-										<p><time id="current-date"></time></p>
+										<h2><time id="current-date"></time></p>
 									  <script>
 									    // Get the current date
 									    var currentDate = new Date();
@@ -49,7 +49,11 @@
 									    var dateElement = document.getElementById("current-date");
 
 									    // Set the text content of the element to the current date
-									    dateElement.textContent = currentDate;
+											dateElement.textContent = currentDate.toLocaleDateString('en-US', {
+											  month: 'long',
+											  day: 'numeric',
+											  year: 'numeric'
+											});
 									  </script>
 									</div>
 								</header>
