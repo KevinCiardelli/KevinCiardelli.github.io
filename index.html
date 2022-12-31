@@ -40,8 +40,17 @@
 										<p>Bachelors of Science Computer Science </p>
 									</div>
 									<div class="meta">
-										<time class="published" datetime="2015-11-01">November 1, 2015</time>
-										<a href="#" class="author"><span class="name">Jane Doe</span><img src="images/avatar.jpg" alt="" /></a>
+										<p>Today's date is: <time id="current-date"></time></p>
+									  <script>
+									    // Get the current date
+									    var currentDate = new Date();
+
+									    // Get the element with the ID "current-date"
+									    var dateElement = document.getElementById("current-date");
+
+									    // Set the text content of the element to the current date
+									    dateElement.textContent = currentDate;
+									  </script>
 									</div>
 								</header>
 								<a href="single.html" class="image featured"><img src="images/pic01.jpg" alt="" /></a>
@@ -440,7 +449,8 @@ print 'It took ' + i + ' iterations to sort the deck.';</code></pre>
 								<header>
 									<h2>Kevin Ciardelli</h2>
 									<p>Junior at Boston College class of 2024 </p>
-									<p>Bachelors of Science Computer Science </p>
+									<p>Bachelors of Science <p>
+									<p>Computer Science </p>
 								</header>
 							</section>
 
